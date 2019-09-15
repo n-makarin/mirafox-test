@@ -10,6 +10,10 @@ export default {
   components: {
   },
   props: {
+    data: {
+      type: Array,
+      default: () => []
+    }
   }
 }
 </script>
