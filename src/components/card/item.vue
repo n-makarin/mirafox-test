@@ -57,6 +57,7 @@ export default {
   max-width: 225px;
   border: 1px solid #d0d3e2;
   box-sizing: border-box;
+  background: white;
   &__img {
     img {
       max-width: 100%;
