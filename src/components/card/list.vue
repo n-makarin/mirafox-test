@@ -39,6 +39,12 @@ export default {
   }
   &_slider-view {
     flex-wrap: nowrap;
+    .card-item:first-child {
+      margin-left: 0;
+    }
+    .card-item:last-child {
+      margin-right: 0;
+    }
   }
 }
 </style>
