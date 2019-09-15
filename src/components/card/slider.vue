@@ -62,6 +62,7 @@ export default {
   },
   mounted: function () {
     this.$nextTick(function () {
+      this.setSlidesNumber()
       window.addEventListener('resize', this.setSlidesNumber);
     })
   },
