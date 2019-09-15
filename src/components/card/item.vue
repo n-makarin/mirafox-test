@@ -11,13 +11,18 @@
           <div class="card-item-info-top__user__name">{{ data.userName }}</div>
         </div>
         <div class="card-item-info-top__rating">
-          <div class="card-item-info-top__rating__star">{{ parseFloat(data.rating.starNumber) }}</div>
-          <div class="card-item-info-top__rating__votes">{{ data.rating.votesNumber }}</div>
+          <div class="card-item-info-top__rating__star">
+            <img src="../../assets/icons/star-solid.svg" alt="star">
+            <div>{{ parseFloat(data.rating.starNumber) }}</div>
+          </div>
+          <div class="card-item-info-top__rating__votes">({{ data.rating.votesNumber }})</div>
         </div>
       </div>
       <div class="card-item__info__bottom card-item-info-bottom">
-        <div class="card-item-info-bottom__likes"></div>
-        <div class="card-item-info-bottom__cost">{{ data.cost }}</div>
+        <div class="card-item-info-bottom__likes" @click="setLike()">
+          <img src="../../assets/icons/heart-solid.svg" alt="">
+        </div>
+        <div class="card-item-info-bottom__cost">от {{ data.cost }}₽</div>
       </div>
     </div>
   </div>
@@ -38,6 +43,11 @@ export default {
     imgPath() {
       return 'https://picsum.photos/280/200/?random'
     }
+  },
+  methods: {
+    setLike() {
+      alert('Лайк товара с id ' + this.data.id)
+    }
   }
 }
 </script>
@@ -53,7 +63,7 @@ export default {
     }
   }
   &__info {
-    padding: 15px;
+    padding: 15px 15px 10px 15px;
     &__title {
       margin-bottom: 10px;
     }
@@ -62,6 +72,7 @@ export default {
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
+    margin-bottom: 10px;
     border-bottom: 1px solid #e7e7e7;
     &__user {
       &__activity {
@@ -74,21 +85,50 @@ export default {
       }
       &__name {
         display: inline-block;
-        color: #d2d2d2;
+        color: #b1b0af;
       }
     }
     &__rating {
+      display: flex;
+      align-items: center;
       &__star {
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        margin-right: 5px;
+        font-size: 15px;
+        img {
+          width: 13px;
+          height: 13px;
+          margin-right: 5px;
+        }
         color: #ffb300;
       }
       &__votes {
         display: inline-block;
         color: #d5d5d5;
+        font-size: 14px;
       }
     }
   }
   &-info-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__likes {
+      align-self: center;
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+      opacity: .7;
+      &:hover {
+        opacity: 1;
+      }
+      img {
+        width: 100%;
+      }
+
+    }
 
     &__cost {
       color: #3d7843;
