@@ -40,6 +40,7 @@ export default {
   &__card-list {
     max-width: 1240px;
     margin: 0 auto;
+    padding-bottom: 50px;
   }
   &__card-slider {
     max-width: 1300px;
