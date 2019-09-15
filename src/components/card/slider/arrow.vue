@@ -1,9 +1,9 @@
 <template>
   <div class="card-slider__arrow">
-    <button v-if="direction === 'left'">
+    <button @click="$emit('left', 'left')" v-if="direction === 'left'">
       <div>&#60;</div>
     </button>
-    <button v-else>
+    <button @click="$emit('right', 'right')" v-else>
       <div>&#62;</div>
     </button>
   </div>
