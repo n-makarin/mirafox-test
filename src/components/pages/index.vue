@@ -32,13 +32,17 @@ export default {
 <style lang="scss" scoped>
 .page-index {
   background: #f5f5f5;
-  padding: 50px;
+  padding: 50px 20px;
   h2 {
     text-align: center;
     font-weight: normal;
   }
   &__card-list {
     max-width: 1240px;
+    margin: 0 auto;
+  }
+  &__card-slider {
+    max-width: 1300px;
     margin: 0 auto;
   }
 }
