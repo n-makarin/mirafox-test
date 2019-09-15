@@ -114,6 +114,8 @@ export default {
     margin-bottom: 10px;
     border-bottom: 1px solid #e7e7e7;
     &__user {
+      display: flex;
+      align-items: center;
       &__activity {
         display: inline-block;
         width: 10px;
@@ -124,6 +126,10 @@ export default {
       }
       &__name {
         display: inline-block;
+        max-width: 100px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         a {
           text-decoration: none;
           color: #b1b0af;
