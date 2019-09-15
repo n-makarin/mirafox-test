@@ -1,7 +1,13 @@
 <template>
   <div class="page-index">
-    <card-list :data="cardListData" />
-    <card-slider :data="cardListData" />
+    <section>
+      <h2>Список карточек</h2>
+      <card-list class="page-index__card-list card-list_list-view" :data="cardListData" />
+    </section>
+    <section>
+      <h2>Слайдер карточек</h2>
+      <card-slider class="page-index__card-slider" :data="cardListData" />
+    </section>
   </div>
 </template>
 
@@ -23,5 +29,17 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.page-index {
+  background: #f5f5f5;
+  padding: 50px;
+  h2 {
+    text-align: center;
+    font-weight: normal;
+  }
+  &__card-list {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+}
 </style>

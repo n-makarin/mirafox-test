@@ -32,5 +32,10 @@ export default {
   &__item {
     margin: 10px;
   }
+
+  /* modifiers */
+  &_list-view {
+    justify-content: center;
+  }
 }
 </style>
