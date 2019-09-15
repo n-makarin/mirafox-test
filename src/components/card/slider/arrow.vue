@@ -40,6 +40,11 @@ export default {
       display: block;
       transform: scale(1, 2.5)
     }
+    @media screen and (max-width: 350px) {
+      width: 25px;
+      width: 25px;
+      font-size: 20px;
+    }
   }
 }
 </style>
