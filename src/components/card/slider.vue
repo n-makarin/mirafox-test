@@ -24,7 +24,14 @@ export default {
   data: () => ({
     itemsToShow: 5,
     itemsToLoad: 5,
-    slideNumber: 1
+    slideNumber: 1,
+    windowWidth: 0,
+    screenTypes: {
+      lg: 1140,
+      md: 1140,
+      sm: 720,
+      xs: 540
+    }
   }),
   computed: {
     slideData() {
@@ -53,7 +60,25 @@ export default {
       return this.startItemNumber + this.itemsToShow
     }
   },
+  mounted: function () {
+    this.$nextTick(function () {
+      window.addEventListener('resize', this.setSlidesNumber);
+    })
+  },
   methods: {
+    setSlidesNumber() {
+      const windowWidth = window.innerWidth
+      debugger
+      if (windowWidth >= this.screenTypes.lg) {
+        this.itemsToShow = 5
+      } else if (windowWidth >= this.screenTypes.md) {
+        this.itemsToShow = 3
+      } else if (windowWidth >= this.screenTypes.sm) {
+        this.itemsToShow = 2
+      } else {
+        this.itemsToShow = 1
+      }
+    },
     turnLeft() {
       if (this.slideNumber - 1 >= 1) {
         this.slideNumber--
@@ -76,6 +101,7 @@ export default {
 .card-slider {
   display: flex;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 </style>
