@@ -15,110 +15,110 @@
     {
       "id": 1,
       "title": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "userName": "John Doe",
+      "userName": "Mark Twain",
       "userId": 11,
       "imgPath": "images/cards/2",
       "rating": { 
-        "starNumber": 4.7,
-        "votesNumber": 256
+        "starNumber": 2.7,
+        "votesNumber": 156
       },
-      "cost": "520"
+      "cost": "321"
     },
     {
       "id": 2,
       "title": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "userName": "John Doe",
+      "userName": "Emma Watson",
       "userId": 82,
       "imgPath": "images/cards/3",
       "rating": { 
-        "starNumber": 4.8,
-        "votesNumber": 258
+        "starNumber": 4.2,
+        "votesNumber": 918
       },
       "cost": "320"
     },
     {
       "id": 3,
       "title": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "userName": "John Doe",
+      "userName": "Frederic Chopin",
       "userId": 33,
       "imgPath": "images/cards/4",
       "rating": { 
-        "starNumber": 4.7,
-        "votesNumber": 256
+        "starNumber": 2.1,
+        "votesNumber": 155
       },
-      "cost": "520"
+      "cost": "814"
     },
     {
       "id": 4,
       "title": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "userName": "John Doe",
+      "userName": "Sara Conor",
       "userId": 64,
       "imgPath": "images/cards/5",
       "rating": { 
-        "starNumber": 4.7,
-        "votesNumber": 236
+        "starNumber": 4.9,
+        "votesNumber": 369
       },
-      "cost": "521"
+      "cost": "721"
     },
     {
       "id": 5,
       "title": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "userName": "John Doe",
+      "userName": "Walter Schmid",
       "userId": 55,
       "imgPath": "images/cards/6",
       "rating": { 
-        "starNumber": 4.7,
-        "votesNumber": 256
+        "starNumber": 2.2,
+        "votesNumber": 113
       },
-      "cost": "520"
+      "cost": "89"
     },
     {
       "id": 6,
       "title": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "userName": "John Doe",
+      "userName": "Alex Lion",
       "userId": 46,
       "imgPath": "images/cards/7",
       "rating": { 
-        "starNumber": 4.7,
-        "votesNumber": 256
+        "starNumber": 4.3,
+        "votesNumber": 556
       },
-      "cost": "520"
+      "cost": "920"
     },
     {
       "id": 7,
       "title": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "userName": "John Doe",
+      "userName": "Dorian Gray",
       "userId": 37,
       "imgPath": "images/cards/8",
       "rating": { 
-        "starNumber": 4.7,
-        "votesNumber": 256
+        "starNumber": 5.0,
+        "votesNumber": 666
       },
-      "cost": "520"
+      "cost": "999"
     },
     {
       "id": 8,
       "title": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "userName": "John Doe",
+      "userName": "Ludvick Boshich",
       "userId": 81,
       "imgPath": "images/cards/9",
       "rating": { 
-        "starNumber": 4.7,
-        "votesNumber": 256
+        "starNumber": 2.4,
+        "votesNumber": 248
       },
-      "cost": "520"
+      "cost": "411"
     },
     {
       "id": 9,
       "title": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "userName": "John Doe",
+      "userName": "John Dorian",
       "userId": 92,
       "imgPath": "images/cards/10",
       "rating": { 
-        "starNumber": 4.7,
-        "votesNumber": 256
+        "starNumber": 5.0,
+        "votesNumber": 886
       },
-      "cost": "520"
+      "cost": "723"
     }
   ]
 }
