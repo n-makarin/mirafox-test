@@ -4,11 +4,14 @@
       <img :src="imgPath" alt="card">
     </div>
     <div class="card-item__info">
-      <div class="card-item__info__title">{{ data.title }}</div>
+      <div class="card-item__info__title">
+        <a @click="openItem" href="#">{{ data.title }}</a> 
+      </div>
       <div class="card-item__info__top card-item-info-top">
         <div class="card-item-info-top__user">
           <div class="card-item-info-top__user__activity"></div>
-          <div class="card-item-info-top__user__name">{{ data.userName }}</div>
+          <div class="card-item-info-top__user__name">
+            <a @click="openUser" href="#">{{ data.userName }}</a> </div>
         </div>
         <div class="card-item-info-top__rating">
           <div class="card-item-info-top__rating__star">
@@ -47,6 +50,14 @@ export default {
   methods: {
     setLike() {
       alert('Лайк товара с id ' + this.data.id)
+    },
+    openItem(e) {
+      alert('Выбран item с id ' + this.data.id)
+      e.preventDefault()
+    },
+    openUser(e) {
+      alert('Выбран user с id ' + this.data.userId)
+      e.preventDefault()
     }
   }
 }
@@ -55,9 +66,15 @@ export default {
 <style lang="scss" scoped>
 .card-item {
   max-width: 225px;
+  flex-shrink: 0;
   border: 1px solid #d0d3e2;
   box-sizing: border-box;
   background: white;
+  box-shadow: 0 0 10px 2px rgba(128, 128, 128, 0);
+  transition: box-shadow .2s;
+  &:hover {
+    box-shadow: 0px 0px 10px 2px rgb(212, 212, 212);
+  }
   &__img {
     img {
       max-width: 100%;
@@ -70,6 +87,13 @@ export default {
       margin-bottom: 10px;
       max-height: 55px;
       overflow: hidden;
+      a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
       &::before {
         content: '';
         position: absolute;
@@ -100,7 +124,13 @@ export default {
       }
       &__name {
         display: inline-block;
-        color: #b1b0af;
+        a {
+          text-decoration: none;
+          color: #b1b0af;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
     &__rating {
