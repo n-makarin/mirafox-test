@@ -37,5 +37,8 @@ export default {
   &_list-view {
     justify-content: center;
   }
+  &_slider-view {
+    flex-wrap: nowrap;
+  }
 }
 </style>
