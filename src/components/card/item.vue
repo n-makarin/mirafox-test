@@ -16,7 +16,7 @@
         <div class="card-item-info-top__rating">
           <div class="card-item-info-top__rating__star">
             <img src="../../assets/icons/star-solid.svg" alt="star">
-            <div>{{ parseFloat(data.rating.starNumber) }}</div>
+            <div>{{ starNumber }}</div>
           </div>
           <div class="card-item-info-top__rating__votes">({{ data.rating.votesNumber }})</div>
         </div>
@@ -45,6 +45,16 @@ export default {
   computed: {
     imgPath() {
       return 'https://picsum.photos/280/200/?random'
+    },
+    starNumber() {
+      function isInteger(num) {
+        return ((String(num)).indexOf(".") > 0)
+      }
+      let number = parseFloat(this.data.rating.starNumber)
+      if (!isInteger(number)) {
+        number = number + '.0'
+      }
+      return  number
     }
   },
   methods: {
