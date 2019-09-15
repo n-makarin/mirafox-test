@@ -66,7 +66,21 @@ export default {
   &__info {
     padding: 15px 15px 10px 15px;
     &__title {
+      position: relative;
       margin-bottom: 10px;
+      max-height: 55px;
+      overflow: hidden;
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+        width: 40px;
+        height: 19px;
+        background: linear-gradient(to right, rgba(0,0,0,0) 0%, white 60%);
+        z-index: 2;
+      }
     }
   }
   &-info-top {
