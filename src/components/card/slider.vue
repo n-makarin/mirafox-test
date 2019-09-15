@@ -23,7 +23,6 @@ export default {
   },
   data: () => ({
     itemsToShow: 5,
-    itemsToLoad: 5,
     slideNumber: 1,
     windowWidth: 0,
     screenTypes: {
@@ -45,13 +44,13 @@ export default {
      * All slides quantity
      */
     allSlidesNumber() {
-      return this.data.length / this.itemsToLoad
+      return this.data.length / this.itemsToShow
     },
     /**
      * Start number to slicing from data array
      */
     startItemNumber() {
-      return this.slideNumber * this.itemsToLoad - this.itemsToLoad
+      return this.slideNumber * this.itemsToShow - this.itemsToShow
     },
     /**
      * End number to slicing from data array
