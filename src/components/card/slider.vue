@@ -68,7 +68,6 @@ export default {
   methods: {
     setSlidesNumber() {
       const windowWidth = window.innerWidth
-      debugger
       if (windowWidth >= this.screenTypes.lg) {
         this.itemsToShow = 5
       } else if (windowWidth >= this.screenTypes.md) {
