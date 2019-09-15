@@ -1,6 +1,7 @@
 <template>
   <div class="card-list">
     <item 
+      class="card-list__item"
       v-for="(item, index) in data" 
       :key="index"
       :data="item"
@@ -24,5 +25,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  &__item {
+    margin: 10px;
+  }
+}
 </style>
