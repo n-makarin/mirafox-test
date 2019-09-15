@@ -27,8 +27,8 @@ export default {
     slideNumber: 1,
     windowWidth: 0,
     screenTypes: {
-      lg: 1140,
-      md: 1140,
+      lg: 1320,
+      md: 960,
       sm: 720,
       xs: 540
     }
